@@ -57,7 +57,7 @@ jobs:
         with:
           context: ./api_yamdb/
           push: true
-          tags: porttf/yatube_final:latest
+          tags: porttf/yatube_final:latest 
   
   deploy:
     runs-on: ubuntu-latest
