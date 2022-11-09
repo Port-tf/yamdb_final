@@ -10,19 +10,17 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
+from reviews.models import Category, Genre, Review, Title
+from users.models import User
 
 from .filters import TitleFilter
 from .permissions import (IsAdmin, IsAdminOrReadOnly,
                           IsAuthorOrModeRatOrOrAdminOrReadOnly)
 from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ReviewSerializer,
-                          SignUpSerializer, TitlePostSerialzier,
-                          TitleSerializer, TokenRegSerializer,
-                          UserEditSerializer, UserSerializer)
-
-
-from reviews.models import Category, Genre, Review, Title
-from users.models import User
+                          GenreSerializer, ReviewSerializer, SignUpSerializer,
+                          TitlePostSerialzier, TitleSerializer,
+                          TokenRegSerializer, UserEditSerializer,
+                          UserSerializer)
 
 
 class AdminViewSet(mixins.CreateModelMixin, mixins.ListModelMixin,
