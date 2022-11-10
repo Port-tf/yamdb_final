@@ -1,8 +1,6 @@
 name: Django-app workflow
 
-on:
-  push:
-    branches: [ main ]
+on: [ push ]
 
 jobs:
   tests:
@@ -48,9 +46,9 @@ jobs:
           tags: porttf/yatube_final:latest
   
   deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
