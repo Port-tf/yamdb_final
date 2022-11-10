@@ -44,6 +44,6 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 ##### Ссылка на документацию:
-http://127.0.0.1:8000/redoc/
+http://51.250.111.14//redoc/
 
 ##### Автор проекта: Игорь Шкода
