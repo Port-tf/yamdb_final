@@ -1,6 +1,3 @@
-![example workflow](https://github.com/Port-tf/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
-[![Redoc](https://img.shields.io/website?down_color=red&down_message=offline&label=Redoc&style=plastic&up_color=green&up_message=online&url=http%3A%2F%2F51.250.111.14%2Fredoc%2F)](http://51.250.111.14/redoc/)
-
 # Проект YaMDb 
 Cобирает отызвы пользьвателей на фильмы, музыку, книги (произведения)\
 Пользователя могут публиковать отзывы на произведения, оценивать их (по шкале от 1 до 10), и обсуждать отзывы в комментариях.\
